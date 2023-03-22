@@ -50,11 +50,9 @@ resource "aws_eks_node_group" "nodes_general" {
   ]
 
   scaling_config {
-    desired_size = 1
-
-    max_size = 1
-
-    min_size = 1
+    desired_size = 2
+    max_size = 5
+    min_size = 2
   }
 
   ami_type = "AL2_x86_64"
@@ -73,7 +71,7 @@ resource "aws_eks_node_group" "nodes_general" {
   }
 
   # Kubernetes version
-  version = "1.23"
+  version = "1.24"
 
   depends_on = [
     aws_iam_role_policy_attachment.amazon_eks_worker_node_policy_general,

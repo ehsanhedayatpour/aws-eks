@@ -27,7 +27,7 @@ resource "aws_eks_cluster" "eks" {
   name = "eks"
 
   role_arn = aws_iam_role.eks_cluster.arn
-  version = "1.23"
+  version = "1.24"
 
   vpc_config {
     endpoint_private_access = false
