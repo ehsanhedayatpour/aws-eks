@@ -1,4 +1,4 @@
-# AWS EC2 Instance
+# AWS EKS Cluster
 
 Terraform sample code which creates an EKS cluster on AWS.
 
