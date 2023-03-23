@@ -6,13 +6,13 @@ Terraform sample code which creates an EKS cluster on AWS.
 ## Usage
 
 ```hcl
-  $ terraform init
+$ terraform init
 ```
 
 ```hcl
-  $ terraform plan
+$ terraform plan
 ```
 
 ```hcl
-  $ terraform apply
+$ terraform apply
 ```
